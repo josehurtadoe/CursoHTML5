@@ -8,15 +8,14 @@
   </head>
   <body>
     <header>
-      <img src="../Imagenes/Logo_examen.svg" alt="Logo para evaluación - curriculum" width="80px">
-      <h1><center>CURRICULUM VITAE</center></h1>
-      <hr>
-      <h2>NOMBRES Y APELLIDOS:</h2>
-      <h3>José Luis HURTADO ESPINOZA</h3>
-      <h2>FECHA DE NACIMIENTO:</h2>
-      <h3>06 de junio de 1984</h3>
-      <h2>LUGAR DE NACIMIENTO:</h2>
-      <h3>Lima, Lima, Cerdado de Lima</h3>
+      <img src="../imagenes/Logo_examen.svg" alt="Logo para evaluación - curriculum" width="80px">
+      <h1><center><u>CURRICULUM VITAE</u></center></h1>
+      <h3>NOMBRES Y APELLIDOS:</h3>
+      <h4>José Luis HURTADO ESPINOZA</h4>
+      <h3>FECHA DE NACIMIENTO:</h3>
+      <h4>06 de junio de 1984</h4>
+      <h3>LUGAR DE NACIMIENTO:</h3>
+      <h4>Lima, Lima, Cerdado de Lima</h4>
     </header>
     <nav>
       <ol>
@@ -36,16 +35,39 @@
         </thead>
         <tbody>
           <tr>
+            <td>2002</td>
+            <td>Universidad Nacional Daniel Alcides Carrión</td>
+            <td>Cerro de Pasco - Perú</td>
+            <td>SI-2008</td>
+          </tr>
+          <tr>
             <td>2018</td>
-            <td>Ministerio de Transporte y Comunicaciones</td>
-            <td>Lima - Perú</td>
+            <td>Next University</td>
+            <td>Lima - Perú (virtual)</td>
             <td>NO</td>
           </tr>
         </tbody>
         <tfoot>
-          <td colspan="4"><center><em>fin de tabla</em></center></td>
+          <tr>
+            <td colspan="4"><center><em>fin de tabla</em></center></td>
+          </tr>
         </tfoot>
       </table>
+      <br><br>
+      <form autocomplete="on" name="Ingreso de Estudios">
+        <fieldset>
+          <legend>Ingresar Estudios</legend>
+          <label for="año"><b>Año</b></label><br>
+          <input type="date" name="Año" value="" id="año"><br><br>
+          <label for="institucion"><b>Institución</b></label><br>
+          <input type="text" name="Institución" value="" id="institucion" required><br><br>
+          <label for="lugar"><b>Lugar</b></label><br>
+          <textarea name="lugar" rows="2" cols="80" placeholder="Ingresar el lugar donde se realizó el trabajo" id="lugar"></textarea><br><br>
+          <input type="button" name="agregar" value="Agregar">
+          <input type="reset" name="limpiar" value="Limpiar">
+          <input type="button" name="cancelar" value="Cancelar">
+        </fieldset>
+      </form>
     </section>
     <footer>
       <p><em>correoe: josehurtadoe84@gmail.com <br> cel: 941200840 <br> Lima, Perú</em></p>

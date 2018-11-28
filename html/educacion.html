@@ -60,8 +60,17 @@
           <legend>Ingresar Estudios</legend>
           <label for="año"><b>Año</b></label><br>
           <input type="date" name="Año" value="" id="año"><br><br>
+          <label for="tipo_curso"><b>Tipo de curso</b></label>
+            <select name="tipo de curso" id="tipo_curso">
+              <option>Curso</option>
+              <option>Especialidad</option>
+              <option>Maestria</option>
+            </select><br><br>
           <label for="institucion"><b>Institución</b></label><br>
           <input type="text" name="Institución" value="" id="institucion" required><br><br>
+          <label for="termino">¿Curso culminado?</label>
+          <input type="radio" name="termino" value="si">Si
+          <input type="radio" name="termino" value="no">No <br><br>
           <label for="lugar"><b>Lugar</b></label><br>
           <textarea name="lugar" rows="2" cols="80" placeholder="Ingresar el lugar donde se realizó el trabajo" id="lugar"></textarea><br><br>
           <input type="button" name="agregar" value="Agregar">
